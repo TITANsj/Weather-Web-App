@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Weather Project</title>
+
+</head>
+
+<body>
+  <form action="/" method="post">
+    <label for="cityInput">City Name:</label>
+    <input id="cityInput" type="text" name="cityName">
+    <button type="submit">GO</button>
+  </form>
+  <div class="location">
+    <h1 class="location-timezone"><%= zone %>, <%= con %></h1>
+    <img src="http://openweathermap.org/img/wn/<%=tempicon%>@2x.png">
+  </div>
+  <div class="temperature">
+    <div class="degree-section">
+      <h2 class="temperature-degree"><%= tempdeg %>°</h2>
+      <span><%=tempUnit%></span>
+    </div>
+    <div class="temperature-description">
+      <p><%= tempdes %></p>
+    </div>
+  </div>
+  <div><p>Developed by Suryansh Jaiswal</p></div>
+  <script>
+    console.log("tempUnit");
+  </script>
+</body>
+</html>

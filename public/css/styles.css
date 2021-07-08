@@ -1,0 +1,62 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to top, #22c1c3, #fdbb2d);
+  font-family: sans-serif;
+  color: white;
+}
+.location,.temperature{
+  height: 30vh;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.location img{
+  width: 150px;
+}
+.temperature{
+  flex-direction: column;
+}
+.degree-section{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.degree-section span{
+  margin: 10px;
+  font-size: 30px;
+}
+.degree-section h2{
+  font-size: 40px;
+}
+
+button{
+  display:inline-block;
+  padding:0.3em 1.2em;
+  margin:0 0.1em 0.1em 0;
+  border:0.16em solid rgba(255,255,255,0);
+  border-radius:2em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'Roboto',sans-serif;
+  font-weight:300;
+  color:#FFFFFF;
+  text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+  text-align:center;
+  transition: all 0.2s;
+  background-color: #4e9af1;
+}
+button:hover{
+  color:#000000;
+  background-color:#FFFFFF;
+}
